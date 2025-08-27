@@ -1,21 +1,31 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package projetojavavictorqueiroz;
 
-/**
- *
- * @author Laboratorio-Info
- */
+import java.util.Scanner;
+
 public class ProjetoJavaVictorQueiroz {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+        // Introdução ao Switch Case
+        Scanner input = new Scanner  (System.in);
+        System.out.print("Escolha uma opção de 1 a 3:");
+        int opt = input.nextInt();
+        
+        switch(opt){
+            case 1:
+                System.out.println("Você escolheu a opção 1");
+                break;
+                
+            case 2:
+                System.out.println("Você escolheu a opção 2");
+                break;
+            case 3:
+                System.out.println("Você escolheu a opção 3");
+                break;
+                
+            default:
+                System.out.println("Você escolheu a opção DEFAULT");
+                break;
+        }
     }
-    
 }

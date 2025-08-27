@@ -6,8 +6,9 @@ import java.util.Scanner;
 public class ProjetoJavaVictorQueiroz {
 
     public static void main(String[] args) {
-        // Introdução ao Switch Case
         Scanner input = new Scanner  (System.in);
+        
+        /*
         //EXERCICIO 1
         // crie um programa que exiba na tela os numeros impares entre 100 e 200.
         int cont = 100;
@@ -19,7 +20,16 @@ public class ProjetoJavaVictorQueiroz {
             valor++;
             cont++;
         }
-    
+        */
+        
+        //EXERCICIO 2
+        // 2 - crie um programa que exiba na tela os numeros de 100 ate 0;
+        
+        int cont = 100;
+        while(cont >= 0){
+            System.out.println(cont);
+            cont--;
+        }
         }
         
    

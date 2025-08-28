@@ -9,7 +9,7 @@ public class ProjetoJavaVictorQueiroz {
         Scanner input = new Scanner  (System.in);
         
         /*
-        //LISTA 1 | EXERCICIO 1
+        //LISTA 1 | EXERCICIO 1 - crie um programa que exiba na tela os numeros impares entre 100 e 200.
         // crie um programa que exiba na tela os numeros impares entre 100 e 200.
         int cont = 100;
         int valor = 100;
@@ -59,7 +59,7 @@ public class ProjetoJavaVictorQueiroz {
         System.out.println("A média de idade do grupo é " + mediaIdades);
         */
         
-        // LISTA 1 | EXERCICIO 4
+        // LISTA 1 | EXERCICIO 4 - eceba  via teclado quantas vezes a mensagem "Isso é um teste" deve aparecer na tela
         int quant = 0, contIni = 0;
       
         System.out.print("Digite quantas vezes a mensagem será exibida: ");
@@ -69,6 +69,8 @@ public class ProjetoJavaVictorQueiroz {
             contIni++;
             System.out.println(contIni + " - Isso é um teste");
         }
+        
+        
         }
         
    

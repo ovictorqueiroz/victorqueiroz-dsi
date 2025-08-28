@@ -9,7 +9,7 @@ public class ProjetoJavaVictorQueiroz {
         Scanner input = new Scanner  (System.in);
         
         /*
-        //EXERCICIO 1
+        //LISTA 1 | EXERCICIO 1
         // crie um programa que exiba na tela os numeros impares entre 100 e 200.
         int cont = 100;
         int valor = 100;
@@ -23,7 +23,7 @@ public class ProjetoJavaVictorQueiroz {
         */
         
         /*
-        //EXERCICIO 2 - Crie um programa que exiba na tela os numeros de 100 ate 0;
+        //LISTA 1 | EXERCICIO 2 - Crie um programa que exiba na tela os numeros de 100 ate 0;
         
         int cont = 100;
         while(cont >= 0){
@@ -32,8 +32,8 @@ public class ProjetoJavaVictorQueiroz {
         }
         */
         
-        //
-        //EXERCICIO 3 - receba a idade de n alunos e forneça a média
+        /*
+        //LISTA 1 | EXERCICIO 3 - receba a idade de n alunos e forneça a média
         
         int numAlunos = 0;
         int somaIdades = 0;
@@ -52,7 +52,6 @@ public class ProjetoJavaVictorQueiroz {
             numAlunos++;
         }
         System.out.println("Saindo do sistema...");
-        /*
         while(numAlunos <= 4){
         }
         
@@ -60,6 +59,16 @@ public class ProjetoJavaVictorQueiroz {
         System.out.println("A média de idade do grupo é " + mediaIdades);
         */
         
+        // LISTA 1 | EXERCICIO 4
+        int quant = 0, contIni = 0;
+      
+        System.out.print("Digite quantas vezes a mensagem será exibida: ");
+        quant = input.nextInt();
+        
+        while(contIni < quant){
+            contIni++;
+            System.out.println(contIni + " - Isso é um teste");
+        }
         }
         
    

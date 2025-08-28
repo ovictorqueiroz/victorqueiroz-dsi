@@ -32,33 +32,31 @@ public class ProjetoJavaVictorQueiroz {
         }
         */
         
-        /*
-        //LISTA 1 | EXERCICIO 3 - receba a idade de n alunos e forneça a média
-        
-        int numAlunos = 0;
-        int somaIdades = 0;
-        int mediaIdades = 0;
-        int cont = 0;
-        
-        int sysOpt = 0;
-        
-        while(sysOpt != 2){
-        System.out.println("Escolha uma opção:\n[1] Calcular média de idade dos alunos\n[2] Sair\nSua escolha: ");
-        sysOpt = input.nextInt();
+
+        //LISTA 1 | EXERCICIO 3 - receba a somaIdade de n alunos e forneça a média
+        int idadeAluno =0, somaIdade =0, cont = 0;
+        int mediaIdades =0, loopControl = -1;
+
+        //15, 14, 20, 27
+        while (true){
+            System.out.println("Digite a idade do aluno [Digite 0 para parar]");
+            idadeAluno = input.nextInt();
+
+            if (idadeAluno == 0){
+                break;
+            }
             
-            System.out.print("Digite a idade do aluno: ");
-            somaIdades = input.nextInt();
-            somaIdades += somaIdades;
-            numAlunos++;
+            somaIdade += idadeAluno;
+            cont++;
         }
-        System.out.println("Saindo do sistema...");
-        while(numAlunos <= 4){
+
+        if (cont > 0){
+        mediaIdades = somaIdade / cont;
         }
-        
-        mediaIdades = somaIdades / numAlunos;
-        System.out.println("A média de idade do grupo é " + mediaIdades);
-        */
-        
+
+        System.out.println("A média das idades é: " + mediaIdades);
+
+        /*
         // LISTA 1 | EXERCICIO 4 - eceba  via teclado quantas vezes a mensagem "Isso é um teste" deve aparecer na tela
         int quant = 0, contIni = 0;
       
@@ -69,7 +67,7 @@ public class ProjetoJavaVictorQueiroz {
             contIni++;
             System.out.println(contIni + " - Isso é um teste");
         }
-        
+        */
         
         }
         

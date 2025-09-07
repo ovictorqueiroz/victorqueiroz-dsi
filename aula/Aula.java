@@ -108,7 +108,7 @@ public class Aula {
         }
         */
 
-            /*
+
         //EXERCICIO 3 - Contando vogais
 
         String palavra;
@@ -120,21 +120,46 @@ public class Aula {
 
         int contA = 0, contE = 0, contI = 0, contO = 0, contU = 0;
 
+
         while(cont < palavra.length()){
-            if(palavra.){
-                contA++;
+            char letra = palavra.charAt(cont);
+            switch (letra){
+                case 'a':
+                    contA++;
+                    break;
+                case 'e':
+                    contE++;
+                    break;
+                case'i':
+                    contI++;
+                    break;
+                case'o':
+                    contO++;
+                    break;
+                case'u':
+                    contU++;
+                    break;
             }
-
-            else {
-            }
-
+            cont++;
         }
 
+        int totVog = contA + contE + contI + contO + contU;
 
-
-
-        System.out.println(palavra + " contém " + contA + " letra A");
-        */
+        System.out.print(palavra + " contém " + totVog + " vogais no total");
+        if (totVog > 0){
+            System.out.println(", que são: ");
+        }
+        if(contA > 0){
+            System.out.println(contA + " letra A");
+        }if (contE > 0){
+            System.out.println(contE + " letra E");
+        }if(contI > 0){
+            System.out.println(contI + " letra I");
+        }if(contO > 0){
+            System.out.println(contO + " letra O");
+        }if (contU > 0){
+        System.out.println(contU + " letra U");
+        }
 
         /*
        //EXERCICIO 4 - Asterisco

@@ -26,6 +26,7 @@ public class Aula24set {
         }
         */
         
+        /*
         //Exercicio 02
         
         int numPares = 0;
@@ -43,6 +44,36 @@ public class Aula24set {
         }
         
         System.out.println("A soma dos números pares é: " + numPares);
+        */
+        
+        /*
+        //Exercicio 03
+        for(int ano = 2000; ano <= 2025; ano++){
+            if(ano % 4 == 0 && ano % 100 != 0){
+                System.out.println(ano + " é um ano bissexto");
+            }
+        }
+        */
+        
+        //Exercicio 04
+        int fInterval = 0;
+        int dInterval = 0;
+        
+        
+        for (int i = 1; i <= 10; i++){
+            System.out.println("Digte o " + i + "° valor: ");
+            int n = input.nextInt();
+            
+            if(n > 10 && n < 50){
+                dInterval++;
+            }
+            else{
+                fInterval++;
+            }
+        }
+        
+        System.out.println("Ao total, " + dInterval + " números estavam entre 10 e 50");
+        
         
         
     }

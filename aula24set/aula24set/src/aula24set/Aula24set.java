@@ -31,14 +31,14 @@ public class Aula24set {
         int numPares = 0;
         
         for(int c = 1; c <= 4; c++){
-            System.out.println("Digite um número: ");
+            System.out.println("Digite o " + c + "° número: ");
             int numInput = input.nextInt();
             
             if(numInput % 2 == 0){
                 numPares += numInput;
             }
             else{
-                System.out.println("Você não digitou nenhum número par");
+                System.out.println("Números ímpares não entram na soma");
             }
         }
         

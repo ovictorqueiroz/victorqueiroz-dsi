@@ -72,7 +72,7 @@ public class Aula24set {
             }
         }
         
-        System.out.println("Ao total, " + dInterval + " números estavam entre 10 e 50");
+        System.out.println("Ao total, " + dInterval + " dos números digitados estavam entre 10 e 50, e " + fInterval + " estavam fora desse intervalo.");
         
         
         

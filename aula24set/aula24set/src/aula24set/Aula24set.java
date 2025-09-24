@@ -5,6 +5,7 @@
  */
 package aula24set;
 import java.util.Scanner;
+import java.util.Random;
 /**
  *
  * @author Laboratorio-Info
@@ -16,6 +17,7 @@ public class Aula24set {
      */
     public static void main(String[] args) {
         Scanner input = new Scanner (System.in);
+        Random random = new Random();
         /*
         //Exercicio 01
         
@@ -55,6 +57,7 @@ public class Aula24set {
         }
         */
         
+        /*
         //Exercicio 04
         int fInterval = 0;
         int dInterval = 0;
@@ -73,6 +76,13 @@ public class Aula24set {
         }
         
         System.out.println("Ao total, " + dInterval + " dos números digitados estavam entre 10 e 50, e " + fInterval + " estavam fora desse intervalo.");
+*/
+        //Exercicio 5
+        
+        for(int i =1; i <=20; i++){
+            int r = random.nextInt(1999 - (1000 - 1) + 1000);
+            System.out.println("Iteração n° " + i + ":" + r );
+        }
         
         
         

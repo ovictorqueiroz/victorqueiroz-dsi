@@ -51,11 +51,12 @@ public class Aula24set {
         /*
         //Exercicio 03
         for(int ano = 2000; ano <= 2025; ano++){
-            if(ano % 4 == 0 && ano % 100 != 0){
+            if(ano % 4 == 0){
                 System.out.println(ano + " é um ano bissexto");
             }
         }
         */
+        
         
         /*
         //Exercicio 04
@@ -76,13 +77,19 @@ public class Aula24set {
         }
         
         System.out.println("Ao total, " + dInterval + " dos números digitados estavam entre 10 e 50, e " + fInterval + " estavam fora desse intervalo.");
-*/
+*/      
+        
         //Exercicio 5
         
         for(int i =1; i <=20; i++){
             int r = random.nextInt(1999 - (1000 - 1) + 1000);
-            System.out.println("Iteração n° " + i + ":" + r );
+            
+            if(r % 11 == 5){
+                System.out.println("Iteração n° " + i + ": " + r );
+                
+            }
         }
+        
         
         
         

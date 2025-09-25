@@ -6,6 +6,7 @@
 package aula24set;
 import java.util.Scanner;
 import java.util.Random;
+import javax.swing.JOptionPane;
 /**
  *
  * @author Laboratorio-Info
@@ -78,7 +79,7 @@ public class Aula24set {
         
         System.out.println("Ao total, " + dInterval + " dos números digitados estavam entre 10 e 50, e " + fInterval + " estavam fora desse intervalo.");
 */      
-        
+        /*
         //Exercicio 5
         
         for(int i =1; i <=20; i++){
@@ -89,6 +90,23 @@ public class Aula24set {
                 
             }
         }
+*/      String nomeAluno;
+        double somaNotas = 0, media = 0;
+        
+        nomeAluno = JOptionPane.showInputDialog(null, "Digite o nome do aluno: ");
+       
+        for(int i = 1; i <= 3; i++){
+           String nInput = JOptionPane.showInputDialog(null, "Digite a " + i + "° nota de " + nomeAluno);
+           JOptionPane.showMessageDialog(null,"Nota " + (i)+ ": " + nInput, "Confime a Nota", 1);
+           double notasInput = Double.parseDouble(nInput);
+           
+           somaNotas += notasInput;
+       }
+           
+       media = somaNotas / 3;
+       
+       JOptionPane.showMessageDialog(null,"A média de " + nomeAluno + " é: " + media, "Média de " + nomeAluno, 2);
+       JOptionPane.showMessageDialog(null,"Fim do Programa", "Mensagem", 2);
         
         
         

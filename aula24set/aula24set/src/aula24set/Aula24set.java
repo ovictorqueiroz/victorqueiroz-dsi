@@ -105,7 +105,7 @@ public class Aula24set {
            
        media = somaNotas / 3;
        
-       JOptionPane.showMessageDialog(null,"A média de " + nomeAluno + " é: " + media, "Média de " + nomeAluno, 2);
+       JOptionPane.showMessageDialog(null,"A média é: " + String.format("%.2f",media), "Média de " + nomeAluno, 2);
        JOptionPane.showMessageDialog(null,"Fim do Programa", "Mensagem", 2);
         
         

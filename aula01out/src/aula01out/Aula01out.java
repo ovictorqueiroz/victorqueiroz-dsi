@@ -37,12 +37,23 @@ import javax.swing.JOptionPane;
         
         //DESAFIO - LOTERIA
         Random random = new Random();
-        //Menu
-        int menuOpt = 0;
+      
+        String temp = JOptionPane.showInputDialog(null, "Escolha o tipo de Jogo: \n [1] QUINA \n [2] SENA \n [3] DUPLA SENA \n [4] LOTOMANIA \n [5] SAIR", "Loteria Virtual", -1);
+        
+        int menuOpt = Integer.parseInt(temp);
         
         switch(menuOpt){
             case 1:
+                String qFinal = "";
+                int [] quina = new int [5];
+                for(int q = 0; q < 5; q++){
+                    int rQuina = random.nextInt(80);
+                    quina[q] = rQuina;
+                    qFinal += quina[q] + " | ";
+                }
+                JOptionPane.showMessageDialog(null, qFinal, "Resultado", -1);
                 break;
+                
             case 2:
                 break;
             case 3:
@@ -52,12 +63,12 @@ import javax.swing.JOptionPane;
             case 5:
                 break;
             default:
-                JOptionPane.showMessageDialog(null, "Opção Inválida!", "Mensagem", 0);
-                
+                JOptionPane.showMessageDialog(null, "Opção Inválida!", "Mensagem", 0);    
+            }
         }
         
         
         
     }
     
-}
+

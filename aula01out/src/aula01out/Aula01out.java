@@ -37,10 +37,13 @@ import javax.swing.JOptionPane;
         
         //DESAFIO - LOTERIA
         Random random = new Random();
-      
+        
+        int menuOpt = 0;
+        
+        while(menuOpt != 5){
         String temp = JOptionPane.showInputDialog(null, "Escolha o tipo de Jogo: \n [1] QUINA \n [2] SENA \n [3] DUPLA SENA \n [4] LOTOMANIA \n [5] SAIR", "Loteria Virtual", -1);
         
-        int menuOpt = Integer.parseInt(temp);
+        menuOpt = Integer.parseInt(temp);
         
         switch(menuOpt){
             case 1:
@@ -97,6 +100,7 @@ import javax.swing.JOptionPane;
                 JOptionPane.showMessageDialog(null, "Opção Inválida!", "Mensagem", 0);    
             }
         }
+    }
         
         
         

@@ -75,6 +75,9 @@ import javax.swing.JOptionPane;
                     int rSena = random.nextInt(50);
                     duplaSena[c] = rSena;
                     dsFinal += duplaSena[c] + " | ";
+                    if(c % 6 == 0){
+                 						dsFinal = "\n";
+                 					}
                 }
                 JOptionPane.showMessageDialog(null, " | " + dsFinal, "Resultado - Dupla Sena", -1);
                 break;
@@ -86,6 +89,9 @@ import javax.swing.JOptionPane;
                     int rSena = random.nextInt(100);
                     lotomania[c] = rSena;
                     lotoFinal += lotomania[c] + " | ";
+                    if(c % 5 == 0){
+                						lotoFinal = "\n";
+                					}
                 }
 
                 JOptionPane.showMessageDialog(null, " | " + lotoFinal, "Resultado - Lotomania", -1);

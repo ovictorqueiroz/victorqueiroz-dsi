@@ -46,22 +46,53 @@ import javax.swing.JOptionPane;
             case 1:
                 String qFinal = "";
                 int [] quina = new int [5];
-                for(int q = 0; q < 5; q++){
+                for(int c = 0; c < 5; c++){
                     int rQuina = random.nextInt(80);
-                    quina[q] = rQuina;
-                    qFinal += quina[q] + " | ";
+                    quina[c] = rQuina;
+                    qFinal += quina[c] + " | ";
                 }
-                JOptionPane.showMessageDialog(null, qFinal, "Resultado", -1);
+                JOptionPane.showMessageDialog(null, " | " + qFinal, "Resultado - Quina", -1);
                 break;
                 
             case 2:
+                String sFinal = "";
+                int [] sena = new int [6];
+                for(int c = 0; c < 6; c++){
+                    int rSena = random.nextInt(60);
+                    sena[c] = rSena;
+                    sFinal += sena[c] + " | ";
+                }
+                JOptionPane.showMessageDialog(null, " | " + sFinal, "Resultado - Sena", -1);
                 break;
+                
             case 3:
+                String dsFinal = "";
+                int [] duplaSena = new int [12];
+                for(int c = 0; c < 12; c++){
+                    int rSena = random.nextInt(50);
+                    duplaSena[c] = rSena;
+                    dsFinal += duplaSena[c] + " | ";
+                }
+                JOptionPane.showMessageDialog(null, " | " + dsFinal, "Resultado - Dupla Sena", -1);
                 break;
+                
             case 4:
+                String lotoFinal = "";
+                int [] lotomania = new int [20];
+                for(int c = 0; c < 20; c++){
+                    int rSena = random.nextInt(100);
+                    lotomania[c] = rSena;
+                    lotoFinal += lotomania[c] + " | ";
+                }
+
+                JOptionPane.showMessageDialog(null, " | " + lotoFinal, "Resultado - Lotomania", -1);
+                
                 break;
+                
             case 5:
+                JOptionPane.showMessageDialog(null, "Saindo do Sistema...", "Saída", 2);
                 break;
+                
             default:
                 JOptionPane.showMessageDialog(null, "Opção Inválida!", "Mensagem", 0);    
             }

@@ -71,13 +71,14 @@ import javax.swing.JOptionPane;
             case 3:
                 String dsFinal = "";
                 int [] duplaSena = new int [12];
+
                 for(int c = 0; c < 12; c++){
                     int rSena = random.nextInt(50);
                     duplaSena[c] = rSena;
                     dsFinal += duplaSena[c] + " | ";
-                    if(c % 6 == 0){
-                 						dsFinal = "\n";
-                 					}
+                    if(c == 5){
+                 	    dsFinal += "\n" + " | ";
+                    }
                 }
                 JOptionPane.showMessageDialog(null, " | " + dsFinal, "Resultado - Dupla Sena", -1);
                 break;
@@ -89,9 +90,9 @@ import javax.swing.JOptionPane;
                     int rSena = random.nextInt(100);
                     lotomania[c] = rSena;
                     lotoFinal += lotomania[c] + " | ";
-                    if(c % 5 == 0){
-                						lotoFinal = "\n";
-                					}
+                    if((c+1) % 5 == 0){
+                        lotoFinal += "\n";
+                    }
                 }
 
                 JOptionPane.showMessageDialog(null, " | " + lotoFinal, "Resultado - Lotomania", -1);

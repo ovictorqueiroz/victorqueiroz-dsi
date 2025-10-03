@@ -49,7 +49,7 @@ public class Aula {
         }
         */
 
-        /*
+
         //EXERCICIO 2 - Jogo dos Dados
 
         String player1, player2;
@@ -77,7 +77,7 @@ public class Aula {
             System.out.println("");
             */
 
-            /*
+
             jogp1 = jogp1 + dado1;
             jogp2 = jogp2 + dado2;
 
@@ -89,9 +89,7 @@ public class Aula {
             contJogada++;
 
         }
-        */
 
-        /*
         if(jogp1 > jogp2){
             System.out.println("");
             System.out.println(player1 + " é o vencedor!");
@@ -106,9 +104,9 @@ public class Aula {
             System.out.println(player2 + ":" + jogp2);
             System.out.println(player1 + ":" + jogp1);
         }
-        */
 
 
+        /*
         //EXERCICIO 3 - Contando vogais
 
         String palavra;
@@ -160,7 +158,7 @@ public class Aula {
         }if (contU > 0){
         System.out.println(contU + " letra U");
         }
-
+        */
         /*
        //EXERCICIO 4 - Asterisco
 

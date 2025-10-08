@@ -87,7 +87,7 @@ import javax.swing.JOptionPane;
                 String lotoFinal = "";
                 int [] lotomania = new int [20];
                 for(int c = 0; c < 20; c++){
-                    int rSena = random.nextInt(100);
+                    int rSena = random.nextInt(200);
                     lotomania[c] = rSena;
                     lotoFinal += lotomania[c] + " | ";
                     if((c+1) % 5 == 0){

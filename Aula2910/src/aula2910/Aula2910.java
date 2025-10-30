@@ -7,7 +7,7 @@ import javax.swing.JOptionPane;
 public class Aula2910 {
 
     public static void main(String[] args) {
-        
+        /*
         //EXERCICIO 04
         
         int [] codVend = {1,2,3,4,5,6,7,8,9,10};
@@ -78,9 +78,30 @@ public class Aula2910 {
 		}
 		
 		JOptionPane.showMessageDialog(null, "O vendedor " + piorVendedor + " é o que tem o menor valor a ser recebido: R$ " + menorPgto, "Pior vendedor", 1);
-	
+	*/
         
-        //EXERCICIO 01
+        //EXERCICIO 01 - Matriz
+        
+        
+        int [][] valor = new int[6][6];
+        
+        String total ="";
+        for(int lin =0 ; lin < 6 ; lin++){
+            for(int c =0; c < 6 ; c++){
+           
+           valor[lin][c]= 1;
+           total = total + valor[lin][c] + " | ";
+            
+           if(valor[lin][c] > 0 && valor[lin][c] < 6){
+                valor[lin][c]= 2;
+                total = total + valor[1][c] + " | ";
+           } 
+            }
+            total = total +"\n";          
+        }
+        
+        
+        JOptionPane.showMessageDialog(null, total);
         
     }
     

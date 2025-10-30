@@ -7,6 +7,9 @@ import javax.swing.JOptionPane;
 public class Aula2910 {
 
     public static void main(String[] args) {
+        
+        //EXERCICIO 04
+        
         int [] codVend = {1,2,3,4,5,6,7,8,9,10};
         String [] nomeVend = {"Pedro", "Daniele", "Augusto", "Emily", "Tiago", "Rosana", "Alisson", "Meire", "Thales", "Valéria"};
         double [] totVnd = new double [10];
@@ -34,10 +37,13 @@ public class Aula2910 {
         }
         
         //Relatório das vendas
+        String relatorio = "";
         for(int i =0; i < 10; i++ ){
             vlrReceber[i] = (totVnd[i] * (cmsVnd[i] / 100));
-            JOptionPane.showMessageDialog(null, "Cód: " + codVend[i] + " | Vendedor: " + nomeVend[i] + " | Valor a receber: " + String.format("R$ %.2f", vlrReceber[i]), "Valores a receber por vendedor", 1);
+            relatorio += "Cód: " + codVend[i] + " | Vendedor: " + nomeVend[i] + " | Valor a receber: " + String.format("R$ %.2f", vlrReceber[i]) + "\n";
 	}
+        
+        JOptionPane.showMessageDialog(null, relatorio, "Relatório de Vendas", 1);
         
         //Total de vendas
 	double somaVendas = 0;
@@ -72,7 +78,9 @@ public class Aula2910 {
 		}
 		
 		JOptionPane.showMessageDialog(null, "O vendedor " + piorVendedor + " é o que tem o menor valor a ser recebido: R$ " + menorPgto, "Pior vendedor", 1);
-		
+	
+        
+        //EXERCICIO 01
         
     }
     
